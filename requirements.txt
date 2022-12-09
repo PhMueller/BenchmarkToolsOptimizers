@@ -1,0 +1,7 @@
+numpy
+ConfigSpace
+loguru
+# github.com/automl/hpobench
+# botorch
+optuna
+pandas
