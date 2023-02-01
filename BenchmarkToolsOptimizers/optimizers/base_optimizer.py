@@ -4,7 +4,7 @@ import ConfigSpace as CS
 from BenchmarkTools.core.multi_objective_experiment import MultiObjectiveExperiment
 
 
-class BenchmarkToolsOptimizer:
+class Optimizer:
     def __init__(
             self,
             optimizer_settings: Dict,
@@ -25,5 +25,5 @@ class BenchmarkToolsOptimizer:
     def init(self, seed: int = 0, **kwargs):
         self.seed = seed
 
-    def run(self, objective_function: Callable, **kwargs):
+    def run(self, **kwargs):
         raise NotImplementedError()

@@ -2,10 +2,10 @@ from typing import Dict, Union
 
 import ConfigSpace as CS
 
-from BenchmarkToolsOptimizers.optimizers.base_optimizer import BenchmarkToolsOptimizer
+from BenchmarkToolsOptimizers.optimizers.base_optimizer import Optimizer
 
 
-class BaseRandomOptimizer(BenchmarkToolsOptimizer):
+class BaseRandomOptimizer(Optimizer):
     def __init__(
             self,
             optimizer_settings: Dict,
